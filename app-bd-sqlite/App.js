@@ -10,17 +10,18 @@ const Stack = createNativeStackNavigator();
 export default function App() {
   return (
     <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name='Home'
-          component={Home}
-          options={{
-            title: 'Galeria de filmes',
-            headerStyle: {
-              backgroundColor: '#ff1493'
-            }
-          }}
-        />
+    <Stack.Navigator>
+      <Stack.Screen
+        name='Home'
+        component={Home}
+        options={{
+          title: 'Galeria de filmes',
+          headerStyle: {
+            backgroundColor: '#ff1493',
+          },
+          headerTitleAlign: 'center', 
+        }}
+      />
 
         <Stack.Screen
           name='Cadastro'
@@ -44,16 +45,7 @@ export default function App() {
           }}
         />
 
-        {/* <Stack.Screen
-          name='editarFilme'
-          component={editarFilme}
-          options={{
-            title: 'Editar Filme',
-            headerStyle: {
-              backgroundColor: '#ff1493'
-            }
-          }}
-        /> */}
+       
       </Stack.Navigator>
     </NavigationContainer>
   );
